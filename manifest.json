@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "dual_monitor_wallpaper",
+  "name": "Dual Monitor Wallpaper",
+  "version": "1.0.0",
+  "author": "vpinto",
+  "license": "MIT",
+  "description": "Two distinct wallpapers, one per monitor: the left monitor shows the image whose name ends in _L, the right one the one ending in _R. Configures the wallpaper folder and which monitor is left/right.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Dual Monitor Wallpaper",
+    "description": "Pick the wallpaper folder and which monitor is the left and the right one. Left shows the image ending in _L, right the one ending in _R.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}

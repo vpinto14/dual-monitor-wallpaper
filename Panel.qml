@@ -79,6 +79,8 @@ Panel {
     bar: root.bar
     text: root.ready && (root.leftWallpaper !== "" || root.rightWallpaper !== "") ? "󰍺" : "󰍹"
     active: root.ready && root.leftWallpaper !== "" && root.rightWallpaper !== ""
+    foreground: "#7eb8ff"
+    useActiveColor: false
     tooltipText: !root.ready
       ? "Dual monitor wallpaper: service not running"
       : ("Dual monitor wallpaper · pair " + (root.pairIndex + 1) + "/" + root.pairCount
